@@ -1,0 +1,142 @@
+
+<html>
+
+<head>
+<title>Sierra - App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" >
+<link rel="stylesheet" href="style.css">
+
+
+<script>
+
+	function vip() {
+alert("comming soon!");
+	}
+
+function call() {
+document.getElementById('slider').style.animation = "slideIn 0.3s";
+document.getElementById('s-con').style.animation = "fadeIn 1s";
+
+
+setTimeout(() => {
+
+document.getElementById('slider').style.width = "100%";
+
+}, 300);
+
+
+
+
+}
+	
+	function dismiss() {
+		document.getElementById('slider').style.animation = "slideOut 0.3s";
+		document.getElementById('s-con').style.animation = "fadeOut 0.5s";
+		
+		setTimeout(() => {
+		
+		document.getElementById('slider').style.width = "0%";
+
+		
+
+		}, 300)
+	}
+	
+
+	document.addEventListener('touchmove', function (event) {
+	  if (event.scale !== 1) { event.preventDefault(); }
+	}, { passive: false });
+
+</script>
+</head>
+
+
+
+<body id="body">
+
+
+	<noscript scroll="no">
+   
+</noscript>
+
+	
+
+<center class="container">
+<div class="box">
+<box-content>
+
+<embed src="imgs/assets/icon.png"/>
+<h1>Sierra</h1>
+<h5>The fastest sideloader in iOS that installs games, apps, emulators and much more..</h5>
+<hr>
+
+<button class="download" onclick="call()">DOWNLOAD NOW</button>
+</box-content>
+
+</div>
+</center>
+
+
+
+
+
+
+
+<slider id="slider">
+<slider-content id="s-con">
+<button  alt="back" class="back" onclick="dismiss()"></button>
+
+<center class="container" style="width:100%;">
+<embed src="imgs/assets/icon.png" class="logo">
+
+
+<h4>
+Sierra uses a common certificate which can get revoked easily, But Sierra VIP uses a personal certificate which is only private to your device so if you want no revokes we recommend buying Sierra VIP
+</h4>
+
+
+
+
+<button class="GFG">
+<strong> Get Sierra </strong>
+
+</button>
+
+
+
+
+<button class="GFG1" onclick="vip()">
+<strong> Get Sierra VIP </strong>
+
+</button>
+
+
+<br>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '98b5f0a97aacc3d65a13f0b6e89f9128',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//camomilegentlemennotable.com/98b5f0a97aacc3d65a13f0b6e89f9128/invoke.js"></scr' + 'ipt>');
+</script>
+
+
+
+
+
+</center>
+
+</slider-content>
+</slider>
+
+
+</body>
+
+
+</html>
+
+
