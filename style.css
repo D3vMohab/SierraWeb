@@ -274,7 +274,23 @@ border-radius:25px;
 		cursor: pointer;
 		margin:10;
 	}
-	
+
+.GFG2 {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(184,15,15,1) 0%, rgba(255,190,0,1) 100%);
+    background-size: 100%;
+    border-radius: 20px;
+    border: none;
+    color: White;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    width: 275px;
+    height: 55px;
+    cursor: pointer;
+    margin: 10;
+}
+
 
 
 .back {
