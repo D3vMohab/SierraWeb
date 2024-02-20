@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>AntiBlacklist Configuration</string>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>IPSec</key>
+			<dict>
+				<key>AuthenticationMethod</key>
+				<string>SharedSecret</string>
+				<key>LocalIdentifierType</key>
+				<string>KeyID</string>
+				<key>OnDemandEnabled</key>
+				<integer>1</integer>
+				<key>OnDemandRules</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>EvaluateConnection</string>
+						
+						<key>ActionParameters</key>
+						<array>
+							<dict>
+								<key>Domains</key>
+								<array>
+			
+
+
+   <string>http://vpn.sierra.app</string>
+
+
+
+
+								</array>
+								<key>DomainAction</key>
+								<string>ConnectIfNeeded</string>
+								<key>RequiredDNSServers</key>
+	                            <array>
+	                                <string>127.0.0.1</string>
+	                            </array>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>SharedSecret</key>
+				<data>
+				ZnJlZWwydHB2cG4uY29t
+				</data>
+			</dict>
+			<key>IPv4</key>
+			<dict>
+				<key>OverridePrimary</key>
+				<integer>1</integer>
+			</dict>
+			<key>PPP</key>
+			<dict>
+				<key>AuthName</key>
+				<string>SierraApp LLC</string>
+				<key>AuthPassword</key>
+				<string>@SierraApp</string>
+				<key>CommRemoteAddress</key>
+				<string>AntiBlacklist Server</string>
+			</dict>
+			<key>PayloadDescription</key>
+			<string>Configures VPN settings</string>
+			<key>PayloadDisplayName</key>
+			<string>VPN</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.vpn.managed.5FF15440-2D3D-4D95-AD07-1B684A4965B4</string>
+			<key>PayloadType</key>
+			<string>com.apple.vpn.managed</string>
+			<key>PayloadUUID</key>
+			<string>5FF15440-2D3D-4D95-AD07-1B284AF375B4</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Proxies</key>
+			<dict>
+				<key>HTTPEnable</key>
+				<integer>0</integer>
+				<key>HTTPSEnable</key>
+				<integer>0</integer>
+			</dict>
+			<key>UserDefinedName</key>
+			<string>Anti Revoke Ad Block</string>
+			<key>VPNType</key>
+			<string>L2TP</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>This configuration blocks blacklists done by apple!</string>
+	<key>PayloadDisplayName</key>
+	<string>Anti Revoke Ad Block</string>
+	<key>PayloadIdentifier</key>
+	<string>us.antirevoke.vpnAdBlock</string>
+	<key>PayloadOrganization</key>
+	<string>Anti Revoke</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>9A23E83E-9A99-4E48-97A0-B3C97ECBA076</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
