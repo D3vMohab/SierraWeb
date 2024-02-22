@@ -93,6 +93,7 @@ document.getElementById('slider').style.width = "100%";
 <script>
 
 function download() {
+	window.open("itms-services://?action=download-manifest&url=https://sierra.app/Install.plist");
 	// Show Blacklist popup
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
