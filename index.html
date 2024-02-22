@@ -92,13 +92,9 @@ document.getElementById('slider').style.width = "100%";
 
 <script>
 
-function download() {
-	// Show Blacklist popup
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
 
-	function dismissPopUp() {
+
+	function download_popup() {
 	// Show Blacklist popup
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
@@ -125,9 +121,9 @@ Sierra uses a common certificate which can get revoked easily, But Sierra VIP us
 
 <div class="popup">
 		
-<span class="popuptext" id="myPopup"><a href="blacklist.mobileconfig" onclick="dismissPopUp()">Click here to get anti-blacklist</a></span>
+<span class="popuptext" id="myPopup"><a href="blacklist.mobileconfig" onclick="download_popup()">Click here to get anti-blacklist</a></span>
 
-<button href="itms-services://?action=download-manifest&url=https://sierra.app/Install.plist" class="GFG" onclick="download()">
+<button href="itms-services://?action=download-manifest&url=https://sierra.app/Install.plist" class="GFG" onclick="download_popup()">
 <strong> Get Sierra </strong>
 
 </button>
