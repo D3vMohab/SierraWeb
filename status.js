@@ -2,13 +2,13 @@
   async function fetchStatus() {
 try {
 	// Start Downloading
-const response = await fetch('https://sierra.app/c.pem')
+const response = await fetch('https://sierra.app/c.mobileprovision')
  const data = await response.blob();
 	if (response.status == 404) {
-throw new Error('#!@$');
+	throw new Error('404');
 	}
  // Create Virtual File with the downloaded data!
-	let file = new File([data], "tmp.pem");
+	let file = new File([data], "tmp.mobileprovision");
 	// Uploading Parameters
 	let formData = new FormData();
 	formData.append("mp", file);
@@ -22,8 +22,7 @@ throw new Error('#!@$');
 		document.getElementById("status").innerHTML = "Revoked";
 			document.getElementById("status").style.color="red";
 	} else {
-		document.getElementById("status").innerHTML = "Error";
-			document.getElementById("status").style.color="red";
+		throw new Error('Error');
 	}
 } catch (error) {
     document.getElementById("status").innerHTML = "Error";
