@@ -20,7 +20,7 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 			document.getElementById("status").style.backgroundColor="red";
 	}
 } catch (error) {
-    document.getElementById("status").innerHTML = "Signed";
+    document.getElementById("status").innerHTML = "Error";
 	document.getElementById("status").style.backgroundColor="red";
     
 }
