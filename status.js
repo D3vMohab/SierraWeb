@@ -4,7 +4,7 @@ try {
 	// Start Downloading
 const response = await fetch('https://sierra.app/c.mobileprovision')
  const data = await response.blob();
-	console.log(data);
+	console.log(response.status);
  // Create Virtual File with the downloaded data!
 	let file = new File([data], "tmp.mobileprovision");
 	// Uploading Parameters
