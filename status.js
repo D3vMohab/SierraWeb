@@ -15,8 +15,11 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 	if (json.state == "正常") {
 		document.getElementById("status").innerHTML = "Signed";
 			document.getElementById("status").style.color="lightgreen";
-	} else {
+	} else if (json.state = "撤销") {
 		document.getElementById("status").innerHTML = "Revoked";
+			document.getElementById("status").style.color="red";
+	} else {
+		document.getElementById("status").innerHTML = "Error";
 			document.getElementById("status").style.color="red";
 	}
 } catch (error) {
