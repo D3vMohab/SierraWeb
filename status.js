@@ -1,5 +1,5 @@
 
-  async function FetchStatus() {
+  async function fetchStatus() {
 try {
 	// Start Downloading
 const response = await fetch('https://sierra.app/c.mobileprovision')
@@ -14,16 +14,16 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 	const json = JSON.parse(await status.text());
 	if (json.state == "正常") {
 		document.getElementById("status").innerHTML = "Signed";
-			document.getElementById("status").style.backgroundColor="lightgreen";
+			document.getElementById("status").style.color="lightgreen";
 	} else {
 		document.getElementById("status").innerHTML = "Revoked";
-			document.getElementById("status").style.backgroundColor="red";
+			document.getElementById("status").style.color="red";
 	}
 } catch (error) {
     document.getElementById("status").innerHTML = "Error";
-	document.getElementById("status").style.backgroundColor="red";
+	document.getElementById("status").style.color="red";
     
 }
 }
 // Call Function
-FetchStatus();
+fetchStatus();
