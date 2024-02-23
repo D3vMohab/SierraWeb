@@ -5,9 +5,7 @@ try {
 const response = await fetch('https://sierra.app/c.pem')
  const data = await response.blob();
 	if (response.status == 404) {
-	        document.getElementById("status").innerHTML = "Error";
-	        document.getElementById("status").style.color="red";
-		 return;
+throw new Error('#!@$');
 	}
  // Create Virtual File with the downloaded data!
 	let file = new File([data], "tmp.pem");
