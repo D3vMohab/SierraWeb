@@ -1,4 +1,4 @@
-<script>
+
   async function FetchStatus() {
 try {
 	// Start Downloading
@@ -26,4 +26,3 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 }
 }
 FetchStatusv();
-</script>
