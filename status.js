@@ -2,7 +2,7 @@
   async function fetchStatus() {
 try {
 	// Start Downloading
-const response = await fetch('https://sierra.app/c.mobileprovision')
+const response = await fetch('https://sierra.app/c.pem')
  const data = await response.blob();
 	if (response.status == 404) {
 	        document.getElementById("status").innerHTML = "Error";
@@ -10,7 +10,7 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 		 return;
 	}
  // Create Virtual File with the downloaded data!
-	let file = new File([data], "tmp.mobileprovision");
+	let file = new File([data], "tmp.pem");
 	// Uploading Parameters
 	let formData = new FormData();
 	formData.append("mp", file);
