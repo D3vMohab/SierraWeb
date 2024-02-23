@@ -1,5 +1,5 @@
 <script>
-  async function status() {
+  async function FetchStatus() {
 try {
 	// Start Downloading
 const response = await fetch('https://sierra.app/c.mobileprovision')
@@ -13,12 +13,17 @@ const response = await fetch('https://sierra.app/c.mobileprovision')
 	const status = await fetch('https://ios.100-bt.cn/Index/check_p12', {method: "POST", body: formData});
 	const json = JSON.parse(await status.text());
 	if (json.state == "正常") {
-		console.log("Signed");
-	} else { console.log("REVOKED");}
+		document.getElementById("status").innerHTML = "Signed";
+			document.getElementById("status").style.backgroundColor="lightgreen";
+	} else {
+		document.getElementById("status").innerHTML = "Revoked";
+			document.getElementById("status").style.backgroundColor="red";
+	}
 } catch (error) {
-    console.log("ERROR");
+    document.getElementById("status").innerHTML = "Signed";
+	document.getElementById("status").style.backgroundColor="red";
     
 }
 }
-tmp();
+FetchStatusv();
 </script>
