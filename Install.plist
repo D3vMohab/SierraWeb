@@ -33,7 +33,7 @@
 <key>metadata</key>
 <dict>
 <key>bundle-identifier</key>
-<string>co.app.Sierra.ios</string>
+<string>ios.app.sierra</string>
 <key>bundle-version</key>
 <string>1</string>
 <key>kind</key>
