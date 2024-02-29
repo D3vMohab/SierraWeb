@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>PayloadContent</key>
+        <dict>
+            <key>URL</key>
+            <string>http://api.sierra.app/udid.php</string>
+            <key>DeviceAttributes</key>
+            <array>
+                <string>UDID</string>
+                <string>IMEI</string>
+                <string>ICCID</string>
+                <string>VERSION</string>
+                <string>PRODUCT</string>
+            </array>
+        </dict>
+        <key>PayloadOrganization</key>
+        <string>SierraApp LLC</string>
+        <key>PayloadDisplayName</key>
+        <string>Link Device to Sierra</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadUUID</key>
+        <string>15203f53fe8e33f5881b03d6607b2168</string>
+        <key>PayloadIdentifier</key>
+        <string>udid.sierra.app</string>
+        <key>PayloadDescription</key>
+        <string>Install to link this device to Sierra.</string>
+        <key>PayloadType</key>
+        <string>Profile Service</string>
+    </dict>
+</plist>
