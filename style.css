@@ -14,21 +14,13 @@
   font-size:13px;
   font-weight:550;
   
-   @media screen and (min-width: 830px) {
-      padding:75px;
-   padding-left:175px;
-       margin-left:175px;
-  }
-  
+ 
 }
 
-.download-container 
-{
-  @media screen and (min-width: 830px) {
-  margin-top:75px;
-  margin-bottom:-20px;
-  }
-}
+
+
+
+
 
 
 .n_of_downloads {
@@ -103,15 +95,20 @@ display:flex;
     justify-content: center;
   align-items: center;
   
-  @media screen and (max-width: 490px) {
-    display:none;
-  }
+  
+
 }
 
-header nav-but {
-      @media screen and (min-width: 490px) {
-    display:none;
+@media screen and (max-width: 500px) {
+
+header ul {
+	    display:none;
+}
   }
+	
+
+header nav-but {
+
 
   
  
@@ -137,10 +134,21 @@ header nav-but hr {
   width:100%;
   background-color:black;
   
-    @media screen and (min-width: 490px) {
-    display:none;
-  }
+
 }
+
+
+      @media screen and (min-width: 500px) {
+	      header nav-but {
+    display:none;
+	      }
+
+	     .nav-content {
+display:none;
+	      }
+	      
+  }
+
 
 .nav-img {
   margin:7px;
@@ -273,13 +281,7 @@ border-radius:45px;
   
 
 }
-.iphone-container {
-  
-    @media screen and (min-width: 830px) {
-     float:left;
 
-  }
-}
 
 body::before {
     content: '';
@@ -407,6 +409,34 @@ border: 1px solid #ced4da;
 
 
 
+
+
+
+
+
+
+ @media screen and (min-width: 830px) {
+
+	 .iphone-container {
+  
+
+     float:left;
+
+  
+}
+	 
+.lil-desc p {
+    padding:75px;
+   padding-left:175px;
+       margin-left:175px;
+}
+
+	 .download-container 
+{
+ margin-top:75px;
+  margin-bottom:-20px;
+}
+ }
 
 
 
