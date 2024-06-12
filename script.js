@@ -80,15 +80,17 @@ function dismiss() {
 }
 
 
-document.addEventListener('touchmove', function(event) {
-	if (event.scale !== 1) {
-		event.preventDefault();
-	}
-}, {
-	passive: false
-});
+document.addEventListener("touchstart", function(event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
 
-
+document.addEventListener("wheel", function(event) {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+}, false);
 
 
 
