@@ -99,7 +99,7 @@ display:flex;
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 501px) {
 
 header ul {
 	    display:none;
@@ -138,7 +138,7 @@ header nav-but hr {
 }
 
 
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 501px) {
 	      header nav-but {
     display:none;
 	      }
