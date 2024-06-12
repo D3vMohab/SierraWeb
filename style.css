@@ -137,7 +137,7 @@ header nav-but hr {
   width:100%;
   background-color:black;
   
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 490px) {
     display:none;
   }
 }
