@@ -1,188 +1,421 @@
-noscript {
-height: 100%;
-overflow: hidden;
-margin: 0;
-width: 100%;
-left: 0;
-top: 0;
-position: fixed;
-z-index: 9;
-background-color: black;
- overflow-y: hidden;
+/* styles.css */
+.lil-desc {
+  position:relative;
+
+ 
+  width:100%;
+  
+
+ 
 }
 
+.lil-desc p {
+ padding:10px;
+  font-size:13px;
+  font-weight:550;
+  
+   @media screen and (min-width: 830px) {
+      padding:75px;
+   padding-left:175px;
+       margin-left:175px;
+  }
+  
+}
+
+.download-container 
+{
+  @media screen and (min-width: 830px) {
+  margin-top:75px;
+  margin-bottom:-20px;
+  }
+}
+
+
+.n_of_downloads {
+  
+  color:#3b3b3b;
+  margin-top:4px;
+  font-weight:300;
+  font-size:14px;
+}
+
+noscript {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 9;
+    background-color: black;
+    overflow-y: hidden;
+}
+
+
+.slogan {
+color:#06272b;  
+  margin:10px;
+}
 
 body {
-
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	overflow: hidden
-
-	touch-action: none;
-
- 
- -webkit-user-select: none; /* Safari */
+  -webkit-user-select: none; /* Safari */
  -ms-user-select: none; /* IE 10 and IE 11 */
  user-select: none; /* Standard syntax */
+  
+   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
  
- width:max-content;
- background:  radial-gradient(79% 150% at 29% 100%, rgba(14, 43, 47, 0.541) 0%, rgba(14, 43, 47, 0.69) 32%, rgba(14, 43, 47, 0.788) 79%), url("imgs/assets/bg.png") no-repeat fixed center;
- background-size: cover;
- background-color:#2e3b3f;
+    position: relative;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+position: fixed;
+  height:55px;
+  width:100%;
+  top:0;
+ z-index:1;
+
+    text-align: center;
+  
  
 }
 
+header ul li a {
+  font-weight:550;
+  
+}
 
 
-@media only screen and (max-width: 420px) {
-	box-content {
-		width:90%;
+header ul {
+  height:100%;
+    list-style-type: none;
+    padding:0px;
+    margin: 0px;
+display:flex;
+  
+    justify-content: center;
+  align-items: center;
+  
+  @media screen and (max-width: 500px) {
+    display:none;
   }
-	
-	.box {
-		width:90%;
-		}
-	
-	
-
-	
 }
 
+header nav-but {
+      @media screen and (min-width: 500px) {
+    display:none;
+  }
+
+  
+ 
+    
+
+ 
+   margin:8px;
+  position: relative;
+  float:right;
+   width:35px;
+
+  
+}
+
+header nav-but hr {
+  border-radius:10px;
+  border: 1px solid white;
+
+}
+
+.nav-content {
+  display: none;
+  width:100%;
+  background-color:black;
+  
+    @media screen and (min-width: 500px) {
+    display:none;
+  }
+}
+
+.nav-img {
+  margin:7px;
+  border-radius:9px;
+  width:40px;
+  float:left;
+}
+
+.nav-content a {
+font-weight:550;
+  text-decoration:none;
+  color:white;
+  padding:15px;
+  
+}
+
+
+
+
+
+header ul li {
+
+  position: relative;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height:100%;
+    width:100%;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
 
 .container {
-	width:100%;
-	position: absolute;
-	left: 50%;
-	top: 53%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	padding:0;
-	margin:0;
-	
-	
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-	
-	
-	@media only screen and (min-width: 420px) {
-		box-content {
-			width:400px
-	  }
-		
-		.box {
-			width:400px;
-			}
-		
-		
-	
-		
-		
-	
-		
-	}
-	
-	
-
-@keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
+h1, h2, h3 {
+    margin: 0 0 20px;
 }
 
-@keyframes fadeOut {
-0% { opacity: 1; }
-100% { opacity: 0; }
+section {
+    padding: 60px 0;
+}
+
+.cta-button {
+  
+    background-color: #007AFF;
+    color: #fff;
+    padding: 10px 0px;
+  width:285px;
+    text-decoration: none;
+    border-radius: 12px;
+   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #007BEE;
+}
+
+#install-counter {
+    font-size: 24px;
+    color: #ff6600;
+    margin-top: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-item embed {
+  
+  width:40px;
+  
+}
+
+
+footer {
+
+    background-color: #06272b;
+    color: #fff;
+    text-align: center;
+   font-weight:550;
+  position:absolute;
+  bottom:0;
+  width:100%;
+display:flex;
+    justify-content:center;
+  align-items:center;
+  gap:15px;
+  
+}
+
+footer embed {
+   height:25px;
+  width:25px;
+  
+}
+
+.iphone {
+margin-top:-10px;
+ 
+    
+ text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+width:262px;
+height:568px;
+outline: 4px solid #494949;
+border: 9px solid black;
+border-radius:45px;
+box-shadow:
+    inset 0 0 0 1px black;
+  
+
+}
+.iphone-container {
+  
+    @media screen and (min-width: 830px) {
+     float:left;
+
+  }
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   
+    z-index: -1;
+}
+
+
+body::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 10%, #ff6699, transparent 20%),
+                radial-gradient(circle at 20% 30%, #ffcc33, transparent 20%),
+                radial-gradient(circle at 70% 20%, #33ccff, transparent 20%),
+                radial-gradient(circle at 90% 80%, #66ff66, transparent 20%);
+    background-size: 100% 100%;
+    
+   
 }
 
 
 
-.box {
-	animation: fadeIn 3s;
-border-radius:25px;
-	color:white;
-	background-image: linear-gradient(265deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.24) 100%);
 
-	height:400px;
-	box-shadow: 0rem 4.25rem 6.75rem 1.125rem rgba(14,43,47,0.49);
+.email-cell {
+  display:grid;
+  gap:5px;
+
+  padding:30px;
+  border-radius:35px;
+ 
 }
-	
-	
 
-	
-	
-	
-	box-content {
-		
-		
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		padding:0;
-		margin:0;
-	}
-	box-content embed {
-		
-		border-radius:23.33%;
-		width:115px;
-		height:115px;
-	}
-	
-	
-	box-content h1 {
-		
-		color:rgba(255,255,255,0.588);
-		opacity:0.9;
-		font-weight:250;
-	}
-	
-	
-	box-content h5 {
-		
-		color: rgba(255,255,255,0.588);
-			opacity: 1;
-			font-weight: 500;
-			width:80%;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	box-content hr {
-	
-			background-color: rgba(255,255,255,0.388);
-			opacity: 0.5;
-			width: 100%;
-			align-items: center;
-			border: 0;
-	height:2px;
-	}
-	
-	
-	box-content .download {
-		background: none;
-			color: inherit;
-			border: 2;
-			border-color:#fff;
-			border-radius:10px;
-			padding: 10;
-			margin-top:20px;
-			width:70%;
-			box-shadow: none;
-			font: inherit;
-			cursor: pointer;
-			outline: inherit;
-			border-image:none;
-			font-weight: 550;
-		border: 2px solid;
-		
-	}
-	
-	
+
+
+.email-cell input {
+  
+display: block;
+border: 1px solid #ced4da;
+  background-color:white;
+ 
+  color: #495057;
+    border-radius: 0.5rem;
+   font-weight: 400;
+   font-size:15px;
+  line-height: 1.5;
+  padding:10px;
+  background-clip: padding-box;
+      -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.email-cell textarea {
+  border: 1px solid #ced4da;
+  background-color:white;
+  font-size:15px;
+  
+  color: #495057;
+    border-radius: 0.5rem;
+   font-weight: 400;
+  line-height: 1.5;
+  height:100px;
+  padding:10px;
+  background-clip: padding-box;
+      -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.email-cell button {
+  
+  text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.48rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+  
+      color: #fff;
+    background-color: #007AFF;
+    border-color: #007AFF;
+  border-radius:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes slideIn {
@@ -196,10 +429,23 @@ border-radius:25px;
 100% { width: 0%; }
 }
 
+
+
+	.slider-container {
 	
+	position: absolute;
+	left: 50%;
+	top: 53%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding:0;
+	margin:0;
+	width:100%;
+	
+}
 	
 	slider {
-	
+
 		z-index:999;
 		position:fixed;
 		top:0;
@@ -209,7 +455,7 @@ border-radius:25px;
 	
 		height:100%;
 	
-		background: #fff url('imgs/assets/2bg.png') no-repeat top ;
+		background: #fff url('https://sierra.app/imgs/assets/2bg.png') no-repeat top ;
 		background-size: cover;
 		
 	}
@@ -217,7 +463,7 @@ border-radius:25px;
 
 
 	
-	a{
+	slider a {
 		text-decoration:none;
 	}
 
@@ -227,7 +473,7 @@ border-radius:25px;
 		Width:105px;
 		Height:105px;
 	}
-	H4{
+	.slider-h4 {
 		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	
 	width:300px;
@@ -255,450 +501,62 @@ border-radius:25px;
 		cursor: pointer;
 		margin:10;
 	}
-	/* styles.css */
-.lil-desc {
-  position: relative;
+	
+	.GFG1 {
+		
+		background: linear-gradient(90deg,#ffe188 9%,#ffbe51 97%);
+		background-size:100%;
+		border-radius: 20px;
+		
+		border: none;
+		color: White;
+		padding: 5px 10px;
+		text-align: center;
+		display: inline-block;
+		font-size: 20px;
+		width: 275px;
+		height: 55px;
+	
+		cursor: pointer;
+		margin:10;
+	}
 
-  width: 100%;
-}
-
-.lil-desc p {
-  padding: 10px;
-  font-size: 13px;
-  font-weight: 550;
-
-  @media screen and (min-width: 830px) {
-    padding: 75px;
-    padding-left: 175px;
-    margin-left: 175px;
-  }
-}
-
-.download-container {
-  @media screen and (min-width: 830px) {
-    margin-top: 75px;
-    margin-bottom: -20px;
-  }
-}
-
-.n_of_downloads {
-  color: #3b3b3b;
-  margin-top: 4px;
-  font-weight: 300;
-  font-size: 14px;
-}
-
-noscript {
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: fixed;
-  z-index: 9;
-  background-color: black;
-  overflow-y: hidden;
-}
-
-.slogan {
-  color: #06272b;
-  margin: 10px;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-
-  position: relative;
-}
-
-header {
-  background-color: #000;
-  color: #fff;
-  position: fixed;
-  height: 55px;
-  width: 100%;
-  top: 0;
-  z-index: 1;
-
-  text-align: center;
-}
-
-header ul li a {
-  font-weight: 550;
-}
-
-header ul {
-  height: 100%;
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
-}
-
-header nav-but {
-  @media screen and (min-width: 500px) {
-    display: none;
-  }
-
-  margin: 8px;
-  position: relative;
-  float: right;
-  width: 35px;
-}
-
-header nav-but hr {
-  border-radius: 10px;
-  border: 1px solid white;
-}
-
-.nav-content {
-  display: none;
-  width: 100%;
-  background-color: black;
-
-  @media screen and (min-width: 500px) {
-    display: none;
-  }
-}
-
-.nav-img {
-  margin: 7px;
-  border-radius: 9px;
-  width: 40px;
-  float: left;
-}
-
-.nav-content a {
-  font-weight: 550;
-  text-decoration: none;
-  color: white;
-  padding: 15px;
-}
-
-header ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-header ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0 0 20px;
-}
-
-section {
-  padding: 60px 0;
-}
-
-.cta-button {
-  background-color: #007aff;
-  color: #fff;
-  padding: 10px 0px;
-  width: 285px;
-  text-decoration: none;
-  border-radius: 12px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.cta-button:hover {
-  background-color: #007bee;
-}
-
-#install-counter {
-  font-size: 24px;
-  color: #ff6600;
-  margin-top: 20px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
-}
-
-.feature-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature-item embed {
-  width: 40px;
-}
-
-footer {
-  background-color: #06272b;
-  color: #fff;
-  text-align: center;
-  font-weight: 550;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-footer embed {
-  height: 25px;
-  width: 25px;
-}
-
-.iphone {
-  margin-top: -10px;
-
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  width: 262px;
-  height: 568px;
-  outline: 4px solid #494949;
-  border: 9px solid black;
-  border-radius: 45px;
-  box-shadow: inset 0 0 0 1px black;
-}
-.iphone-container {
-  @media screen and (min-width: 830px) {
-    float: left;
-  }
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  z-index: -1;
-}
-
-body::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 10% 10%, #ff6699, transparent 20%),
-    radial-gradient(circle at 20% 30%, #ffcc33, transparent 20%),
-    radial-gradient(circle at 70% 20%, #33ccff, transparent 20%),
-    radial-gradient(circle at 90% 80%, #66ff66, transparent 20%);
-  background-size: 100% 100%;
-}
-
-.email-cell {
-  display: grid;
-  gap: 5px;
-
-  padding: 30px;
-  border-radius: 35px;
-}
-
-.email-cell input {
-  display: block;
-  border: 1px solid #ced4da;
-  background-color: white;
-
-  color: #495057;
-  border-radius: 0.5rem;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5;
-  padding: 10px;
-  background-clip: padding-box;
-  -webkit-transition: border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.email-cell textarea {
-  border: 1px solid #ced4da;
-  background-color: white;
-  font-size: 15px;
-
-  color: #495057;
-  border-radius: 0.5rem;
-  font-weight: 400;
-  line-height: 1.5;
-  height: 100px;
-  padding: 10px;
-  background-clip: padding-box;
-  -webkit-transition: border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.email-cell button {
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.48rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.2rem;
-  -webkit-transition: color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  color: #fff;
-  background-color: #007aff;
-  border-color: #007aff;
-  border-radius: 15px;
-}
-
-@keyframes slideIn {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-.slider-container {
-  position: absolute;
-  left: 50%;
-  top: 53%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-slider {
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: white;
-  width: 0%;
-
-  height: 100%;
-
-  background: #fff url("https://sierra.app/imgs/assets/2bg.png") no-repeat top;
-  background-size: cover;
-}
-
-slider a {
-  text-decoration: none;
-}
-
-.logo {
-  border-radius: 23.3%;
-  width: 105px;
-  height: 105px;
-}
-.slider-h4 {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-
-  width: 300px;
-}
-
-.GFG {
-  background: linear-gradient(45deg, cyan, #027bfd);
-  background-size: 100%;
-  border-radius: 20px;
-
-  border: none;
-  color: White;
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  width: 275px;
-  height: 55px;
-
-  margin-top: -0px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  margin: 10;
-}
-
-.GFG1 {
-  background: linear-gradient(90deg, #ffe188 9%, #ffbe51 97%);
-  background-size: 100%;
-  border-radius: 20px;
-
-  border: none;
-  color: White;
-  padding: 5px 10px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  width: 275px;
-  height: 55px;
-
-  cursor: pointer;
-  margin: 10;
-}
 
 slider iframe {
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
+  
+ display: flex;
+    align-items: center;
+    
+ 
+    justify-content: center;
 }
+
 
 .back {
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  float: left;
-  width: 95px;
-  height: 60px;
-  background: url("https://sierra.app/imgs/assets/back.png") no-repeat;
-  background-size: cover;
+	
+  
+		color: inherit;
+		border: none;
+		padding: 0;
+		font: inherit;
+		cursor: pointer;
+		outline: inherit;
+		float:left;
+		width:95px;
+		height:60px;
+		background:  url("https://sierra.app/imgs/assets/back.png") no-repeat ;
+		background-size: cover;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Popup container - can be anything you want */
 .popup {
@@ -713,22 +571,24 @@ slider iframe {
 
 /* The actual popup */
 .popup .popuptext {
-  visibility: hidden;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 14px;
-  padding: 12px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -116px;
+	visibility: hidden;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 14px;
+	padding: 12px;
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -116px;
 }
 
+
 .popup .popuptext a {
-  text-decoration: underline;
+	text-decoration: underline;
   color: #fff;
+
 }
 
 /* Popup arrow */
