@@ -122,7 +122,7 @@ var x = getCookie('twitter');
 if (!x) {
 if (confirm('[SIERRA] Follow our Twitter for exciting giveaways and to stay tuned with the latest news!')) {
 	// Save it!
-	window.open('https://x.com/SierraSigned', '_blank');
+	window.open('https://x.com/SierraSigned');
 	setCookie('twitter','seen',30);
 } else {
 	// Do nothing!
