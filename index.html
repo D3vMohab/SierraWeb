@@ -1,171 +1,181 @@
-
-<html>
-
-<head>
-
-	<script type="text/javascript" src="status.js"></script>
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
-
-	
-<title>Sierra</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="apple-mobile-web-app-capable" content="yes" >
-<link rel="stylesheet" href="style.css">
-
-
-<script>
-
-	function vip() {
-alert("comming soon!");
-	}
-
-function call() {
-document.getElementById('slider').style.animation = "slideIn 0.3s";
-document.getElementById('s-con').style.animation = "fadeIn 1s";
-
-
-setTimeout(() => {
-
-document.getElementById('slider').style.width = "100%";
-
-}, 300);
-
-
-
-
-}
-	
-	function dismiss() {
-		document.getElementById('slider').style.animation = "slideOut 0.3s";
-		document.getElementById('s-con').style.animation = "fadeOut 0.5s";
-		
-		setTimeout(() => {
-		
-		document.getElementById('slider').style.width = "0%";
-
-		
-
-		}, 300)
-	}
-	
-
-	document.addEventListener('touchmove', function (event) {
-	  if (event.scale !== 1) { event.preventDefault(); }
-	}, { passive: false });
-
-</script>
-</head>
-
-
-
-<body id="body">
-
-
-	<noscript scroll="no">
-   
-</noscript>
-
-	
-
-<center class="container">
-<div class="box">
-<box-content>
-
-<embed src="imgs/assets/icon.png"/>
-<h1>Sierra</h1>
-<h5>The fastest sideloader in iOS that installs games, apps, emulators and much more..</h5>
-<hr>
-
-<button class="download" onclick="call()">DOWNLOAD NOW</button>
-</box-content>
-
-</div>
-</center>
-
-
-<script>
-
-
-
-	function download_popup() {
-	// Show Blacklist popup
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-	
-</script>
-
-
-
-
-<slider id="slider">
-<slider-content id="s-con">
-<button  alt="back" class="back" onclick="dismiss()"></button>
-
-<center class="container" style="width:100%;">
-<embed src="imgs/assets/icon.png" class="logo">
-
-
-<h4>
-Sierra uses a common certificate which can get revoked easily, But Sierra VIP uses a personal certificate which is only private to your device so if you want no revokes we recommend buying Sierra VIP
-</h4>
-
-
-
-<div class="popup">
-		
-<span class="popuptext" id="myPopup"><a href="blacklist.mobileconfig" onclick="download_popup()">Click here to get anti-blacklist</a></span>
-<a href="itms-services://?action=download-manifest&url=https://sierra.app/Install.plist">
-<button class="GFG" onclick="download_popup()">
-<strong> Get Sierra </strong>
-
-</button>
-</a>
-</div>
-
-
-
-
-
-<button class="GFG1" onclick="vip()">
-<strong> Get Sierra VIP </strong>
-
-</button>
-
-<br>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '98b5f0a97aacc3d65a13f0b6e89f9128',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="//camomilegentlemennotable.com/98b5f0a97aacc3d65a13f0b6e89f9128/invoke.js"></scr' + 'ipt>');
-</script>
-<h4 style="margin:0;">Free version status: <span id="status">??</span> </h4>
-
-
-
-
-</center>
-
-</slider-content>
-</slider>
-
-
-</body>
-
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://sierra.app/status.js"></script>
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra - Reach new heights</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <noscript scroll="no"></noscript>
+    <header>
+      <embed src="https://sierra.app/imgs/assets/icon.png" class="nav-img" />
+      <nav-but onclick="showNav()">
+        <hr />
+        <hr />
+        <hr />
+      </nav-but>
+      <div class="nav-content" id="nav-content">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#features">Features</a>
+        </li>
+        <li>
+          <a href="#download">Download</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="container">
+        <h2 class="slogan">Discover New Heights with Sierra</h2>
+        <h4 class="slogan">Download your favorite apps with ease!</h4>
+        <br>
+        <div class="iphone-container">
+          <embed src="https://i.ibb.co/t36zhHG/Simulator-Screenshot-i-Phone-14-Pro-2024-06-12-at-01-36-25.png" class="iphone" />
+        </div>
+        <div class="download-container">
+          <a href="#download" class="cta-button">Download now</a>
+          <p class="n_of_downloads">Download count: <span id="install-count">2103</span>
+          </p>
+        </div>
+        <center>
+          <div class="lil-desc">
+            <p>Sierra is a revolutionary 3rd-party appstore for iOS, designed by a team of former Apple employees with a passion for innovation and user experience. <br>
+              <br> With Sierra, you can effortlessly discover and download your favorite apps, all while enjoying a seamless and intuitive interface that makes app discovery a breeze. <br>
+              <br> Our dedicated team of experts is committed to bringing you the best selection of apps, ensuring that you always have access to the latest and greatest software available. <br>
+              <br>Experience the future of app shopping with Sierra – where every download is a delight!
+            </p>
+          </div>
+        </center>
+      </div>
+      </div>
+      <br>
+      <br>
+    </section>
+    <section id="features">
+      <div class="container">
+        <h2>Features</h2>
+        <center>
+          <div class="features-grid">
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/PhpyRTJ/layout.png" />
+              <h3>User-Friendly</h3>
+              <p>Experience a seamless and intuitive interface for easy navigation and app discovery.</p>
+            </div>
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/Wp7QBMX/locked-1.png" />
+              <h3>Secure</h3>
+              <p>Your security is our priority. Download apps safely with our trusted platform.</p>
+            </div>
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/Fb7yxj3/search.png" />
+              <h3>Variety</h3>
+              <p>Access a wide range of apps, from popular games to useful utilities, all in one place.</p>
+            </div>
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/wp7rKDf/repeat.png" />
+              <h3>Regular Updates</h3>
+              <p>Stay updated with the latest versions of your favorite apps. We ensure you have access to the newest features and improvements.</p>
+            </div>
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/tsPNz7V/worldwide.png" />
+              <h3>Community Driven</h3>
+              <p>Join our community of app enthusiasts. Share your thoughts and get recommendations from fellow users.</p>
+            </div>
+            <div class="feature-item">
+              <embed src="https://i.ibb.co/48mPCCy/user.png" />
+              <h3>Expert Support</h3>
+              <p>Need help? Our support team is here to assist you with any issues or questions you may have.</p>
+            </div>
+          </div>
+        </center>
+      </div>
+    </section>
+    <section id="download">
+      <div class="container">
+        <h2>Download Sierra</h2>
+        <p>Get started with Sierra today! Click the button below to download the latest version.</p>
+        <a onclick="show_slider()" class="cta-button">Download for iOS</a>
+        <a onclick="soon()" class="cta-button">Download for PC</a>
+        <br>
+        <br>
+        <a class="twitter-follow-button" href="https://twitter.com/SierraSigned" target="_blank" data-size="large"> Follow @SierraSigned</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or need support? Reach out to us via email at support@sierra.app or fill out the form below.</p>
+        <div class="email-cell">
+          <input type="text" name="name" placeholder="Name" required>
+          <br>
+          <input type="email" name="email" placeholder="Email" required>
+          <br>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <br>
+          <button type="submit">Send Message</button>
+        </div>
+      </div>
+    </section>
+    <br>
+    <footer>
+      <p>&copy; 2024 Sierra. All rights reserved.</p>
+      <a href="https://x.com/SierraSigned" target="_blank">
+        <embed src="https://www.pngkey.com/png/full/11-111779_share-on-twitter-twitter-icon-white-no-background.png" />
+      </a>
+    </footer>
+    <slider id="slider">
+      <slider-content id="s-con">
+        <button alt="back" class="back" onclick="dismiss()"></button>
+        <center class="slider-container">
+          <embed src="https://sierra.app/imgs/assets/icon.png" class="logo">
+          <h4 class="slider-h4"> Sierra uses a common certificate which can get revoked easily, But Sierra VIP uses a personal certificate which is only private to your device so if you want no revokes we recommend buying Sierra VIP </h4>
+          <div class="popup">
+            <span class="popuptext" id="myPopup">
+              <a href="https://sierra.app/blacklist.mobileconfig" onclick="download_popup()">Click here to get anti-blacklist</a>
+            </span>
+            <a href="itms-services://?action=download-manifest&url=https://sierra.app/Install.plist">
+              <button class="GFG" onclick="download_popup()">
+                <strong> Get Sierra </strong>
+              </button>
+            </a>
+          </div>
+          <button class="GFG1" onclick="vip()">
+            <strong> Get Sierra VIP </strong>
+          </button>
+          <br>
+          <script type="text/javascript">
+            atOptions = {
+              'key': '98b5f0a97aacc3d65a13f0b6e89f9128',
+              'format': 'iframe',
+              'height': 50,
+              'width': 320,
+              'params': {}
+            };
+            document.write(' < scr ' + '
+                ipt type = "text/javascript"
+                src = "//camomilegentlemennotable.com/98b5f0a97aacc3d65a13f0b6e89f9128/invoke.js" > < /scr' + 'ipt>');
+          </script>
+          <h4 style="margin:0;">Free version status: <span id="status">??</span>
+          </h4>
+        </center>
+      </slider-content>
+    </slider>
+  </body>
 </html>
 
 
