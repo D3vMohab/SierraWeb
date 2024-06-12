@@ -95,7 +95,7 @@ document.addEventListener("wheel", function(event) {
 
 
 
-if (confirm('[SIERRA] Follow our Twitter for exciting giveaways and to stay updated with the latest news!')) {
+if (confirm('[SIERRA] Follow our Twitter for exciting giveaways and to stay tuned with the latest news!')) {
 	// Save it!
 	window.open('https://x.com/SierraSigned', '_blank');
 } else {
