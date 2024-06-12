@@ -36,7 +36,9 @@ function soon() {
 
 
 
-
+function hideNav() {
+	 document.getElementById("nav-content").style.display = 'none';
+}
 
 
 
