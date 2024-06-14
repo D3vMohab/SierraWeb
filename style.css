@@ -418,7 +418,11 @@ border: 1px solid #ced4da;
 
 
  @media screen and (min-width: 830px) {
+header ul {
+width:50%;
 
+}
+	 
 	 .iphone-container {
   
 
